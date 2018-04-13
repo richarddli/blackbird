@@ -54,7 +54,7 @@ class LinkWidget extends Component {
         { open ?
         <div className="widget-body">
           <div className="widget-title">
-            Development Environments
+            Sandboxes
           </div>
           <div className="widget-links">
             <ul>
@@ -64,13 +64,13 @@ class LinkWidget extends Component {
                     <a target="_blank" rel="noopener noreferrer" href={ `/${link.prefix}/` }>{ link.prefix }</a>
                   </li>
                 ) :
-                <p>No development environments currently deployed.</p>
+                <p>No sandboxes currently deployed.</p>
               }
             </ul>
           </div>
         </div> : null }
         <button onClick={this.toggleWidget} className="widget-button step4">
-          { open ? 'Dismiss' : 'Development Environments' }
+          { open ? 'Dismiss' : 'Sandboxes' }
         </button>
       </div>
     )
